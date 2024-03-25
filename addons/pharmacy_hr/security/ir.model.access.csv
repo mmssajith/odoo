@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pharmacy_employee_category_user,pharmacy.employee.category.user,model_pharmacy_employee_category,pharmacy.group_pharmacy_user,1,1,1,1
+access_pharmacy_employee_category_emp,pharmacy.employee.category.emp,model_pharmacy_employee_category,base.group_user,1,0,0,0
+access_pharmacy_employee_user,pharmacy.employee user,model_pharmacy_employee,pharmacy.group_pharmacy_user,1,1,1,1
+access_pharmacy_employee_system_user,pharmacy.employee system user,model_pharmacy_employee,base.group_system,1,0,0,0
+access_pharmacy_employee_public_user,pharmacy.employee_public,model_pharmacy_employee_public,base.group_user,1,0,0,0
+access_pharmacy_employee_resource_user,resource.resource.user,resource.model_resource_resource,pharmacy.group_pharmacy_user,1,1,1,1
+access_pharmacy_department_user,pharmacy.department.user,model_pharmacy_department,pharmacy.group_pharmacy_user,1,1,1,1
+access_pharmacy_department_employee,pharmacy.department.employee,model_pharmacy_department,base.group_user,1,0,0,0
+access_pharmacy_job_user,pharmacy.job user,model_pharmacy_job,pharmacy.group_pharmacy_user,1,1,1,1
+access_pharmacy_departure_wizard,access.pharmacy.departure.wizard,model_pharmacy_departure_wizard,pharmacy.group_pharmacy_user,1,1,1,0
+access_pharmacy_work_location_user,access_pharmacy_work_location_user,model_pharmacy_work_location,base.group_user,1,0,0,0
+access_pharmacy_work_location_manager,access_pharmacy_work_location_manager,model_pharmacy_work_location,pharmacy.group_pharmacy_manager,1,1,1,1
+access_pharmacy_departure_reason,access_pharmacy_departure_reason_user,model_pharmacy_departure_reason,pharmacy.group_pharmacy_user,1,1,1,1
+access_pharmacy_contract_type_manager,pharmacy.contract.type.manager,model_pharmacy_contract_type,pharmacy.group_pharmacy_user,1,1,1,1
+access_mail_activity_plan_pharmacy_manager,mail.activity.plan.pharmacy.manager,mail.model_mail_activity_plan,pharmacy.group_pharmacy_manager,1,1,1,1
+access_mail_activity_plan_template_pharmacy_manager,mail.activity.plan.template.pharmacy.manager,mail.model_mail_activity_plan_template,pharmacy.group_pharmacy_manager,1,1,1,1

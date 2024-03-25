@@ -1,0 +1,60 @@
+{
+    'name': 'Pharmacy Management System',
+    'version': '1.1',
+    'category': 'Human Resources/Employees',
+    'sequence': 95,
+    'summary': 'Centralize employee information',
+    'website': 'https://www.odoo.com/app/employees',
+    'images': [
+        'static/src/img/default_image.png',
+    ],
+    'depends': [
+        'base_setup',
+        'phone_validation',
+        'mail',
+        'resource',
+        'web',
+    ],
+    'data': [
+        'security/pharmacy_hr_security.xml',
+        'security/ir.model.access.csv',
+        'wizard/pharmacy_hr_departure_wizard_views.xml',
+        'wizard/mail_activity_schedule_views.xml',
+        'views/mail_activity_plan_views.xml',
+        'views/pharmacy_hr_departure_reason_views.xml',
+        'views/pharmacy_hr_contract_type_views.xml',
+        'views/pharmacy_hr_job_views.xml',
+        'views/pharmacy_hr_employee_category_views.xml',
+        'views/pharmacy_hr_employee_public_views.xml',
+        'report/pharmacy_hr_employee_badge.xml',
+        'views/pharmacy_hr_employee_views.xml',
+        'views/pharmacy_hr_department_views.xml',
+        'views/pharmacy_hr_work_location_views.xml',
+        'views/pharmacy_hr_views.xml',
+        'views/res_config_settings_views.xml',
+        'views/res_partner_views.xml',
+        'views/discuss_channel_views.xml',
+        'views/res_users.xml',
+        'views/pharmacy_hr_templates.xml',
+        'data/pharmacy_hr_data.xml',
+    ],
+    'demo': [
+        'data/pharmacy_hr_demo.xml'
+    ],
+    'installable': True,
+    'application': True,
+    'post_init_hook': '_install_pharmacy_hr_localization',
+    'assets': {
+        'web.assets_backend': [
+            'pharmacy_hr/static/src/**/*',
+        ],
+        'web.qunit_suite_tests': [
+            'pharmacy_hr/static/tests/**/*',
+            ('remove', 'pharmacy_hr/static/tests/tours/**/*'),
+        ],
+        'web.assets_tests': [
+            'pharmacy_hr/static/tests/tours/**/*',
+        ],
+    },
+    'license': 'LGPL-3',
+}
